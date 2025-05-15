@@ -1,0 +1,56 @@
+.todoItem {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.todoItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+}
+
+.todoItem input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--primary);
+}
+
+.text {
+  flex: 1;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text);
+  word-break: break-word;
+}
+
+
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.expandBtn {
+  background: none;
+  border: none;
+  color: #0070f3;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: var(--danger);
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 0;
+}
