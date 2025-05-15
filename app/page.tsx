@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { Todo } from '@/types/todo';
 import TodoItem from './components/TodoItem';
 import { v4 as uuidv4 } from 'uuid';
+import ThemeToggle from './components/ThemeToggle';
 
 type Filter = 'all' | 'active' | 'completed';
 
@@ -68,7 +69,8 @@ export default function Home() {
   });
 
   return (
-    <main style={{ padding: '2rem', maxWidth: '600px', margin: 'auto' }}>
+    <main style={{ padding: '2rem', maxWidth: '600px', margin: '20px auto' }}>
+      <ThemeToggle />
       <h1>📝 Todo List</h1>
       <div className="input-group">
         <input
